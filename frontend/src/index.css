@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color-scheme: dark;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030a16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a5db2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2fe;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(6, 22, 45, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(79, 161, 255, 0.15);
+}
+
+.glass-panel-glow {
+  background: rgba(9, 33, 68, 0.75);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.08);
+}
+
+/* Water light caustics simulation background */
+.ocean-glow-bg {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 242, 254, 0.12) 0%, rgba(35, 123, 230, 0.05) 40%, rgba(3, 10, 22, 0) 75%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 20%, #8ac4ff 60%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

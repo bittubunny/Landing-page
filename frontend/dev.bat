@@ -1,0 +1,3 @@
+@echo off
+echo Starting React Vite Dev Server with npm.cmd...
+npm.cmd run dev
